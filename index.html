@@ -26,6 +26,10 @@
   .header .contact { margin: 0; }
   .photo { flex: 0 0 auto; }
   .photo img { width: 150px; height: auto; border: 1px solid #bbb; display: block; }
+  @media (max-width: 640px) {
+    .header { flex-direction: column; align-items: center; text-align: center; }
+    .photo { order: -1; }
+  }
 </style>
 </head>
 
