@@ -20,17 +20,17 @@
   ol.papers li .extras { display: block; margin-top: 2px; font-size: 15px; }
   ol.papers li .extras a { margin-right: 14px; }
   .header { display: flex; align-items: flex-start; justify-content: space-between; gap: 28px; flex-wrap: wrap; margin-bottom: 18px; }
-  .header .text { flex: 1 1 380px; }
+  .header .text { flex: 1 1 0; min-width: 0; }
   .header h1 { margin-top: 0; line-height: 1.1; }
   .header .affil { margin: 0 0 14px 0; }
   .header .contact { margin: 0; }
   .photo { flex: 0 0 auto; }
   .photo img { width: 150px; height: auto; border: 1px solid #bbb; display: block; }
-@media (max-width: 640px) {
-  .header { flex-direction: column; align-items: center; text-align: center; }
-  .header .text { flex: 0 1 auto; }
-  .photo { order: -1; }
-}
+  @media (max-width: 640px) {
+    .header { flex-direction: column; align-items: center; text-align: center; }
+    .header .text { flex: 0 1 auto; }
+    .photo { order: -1; }
+  }
 </style>
 </head>
 
